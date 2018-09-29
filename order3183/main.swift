@@ -8,5 +8,29 @@
 
 import Foundation
 
-print("Hello, World!")
+var i = 0
+var j = 0
+var temp = 0
+var array:[Int] = [10,9,8,7,6,5,4,3,2,1]
+
+for i in 0..<10
+{
+    for j in 0..<10-1-i
+    {
+        if(array[j] > array[j+1])
+        {
+            temp = array[j+1]
+            array[j+1] = array[j]
+            array[j] = temp
+        }
+    }
+}
+
+print(array)
+
+
+
+
+
+
 
